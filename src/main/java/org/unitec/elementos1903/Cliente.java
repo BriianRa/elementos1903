@@ -14,28 +14,48 @@ import org.springframework.data.annotation.Id;
 public class Cliente {
     
     @Id
-    private Integer id;
+   Integer id;
     
-    private String Nombre;
-    private String email;
+  String nombre;
+ String email;
 
+    @Override
+    public String toString() {
+        return "Cliente{" + "id=" + id + ", Nombre=" + nombre + ", email=" + email + '}';
+    }
 
 public Cliente(Integer id,String nombre,String email){
   this.id = id;
-  this.Nombre = nombre;
+  this.nombre = nombre;
   this.email = email;
 }
 public Cliente(){
     
 }
-      public void Id(){
-      
-      }
-    
-      public void Nombre(){
-      
-      }
-      public void email(){
-      
-      }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.nombre = Nombre;
+    }
+
+    public String getEmail() {
+        return email;
+    }     
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
 }
