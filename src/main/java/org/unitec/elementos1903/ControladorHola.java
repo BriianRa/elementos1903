@@ -20,6 +20,6 @@ public class ControladorHola {
     
     @GetMapping("/hola")
     public String hola(){
-        return "Mi primer Servicio REST con spring !!!!!  :o ";
+        return "Mi Servidor WEB y soy Brian Ramirez !!!!!  :o ";
     }
 }
