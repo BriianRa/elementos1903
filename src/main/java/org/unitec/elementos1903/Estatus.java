@@ -29,6 +29,10 @@ public class Estatus {
     public void setSuccess(boolean success) {
         this.success = success;
     }
+
+    void SetMensaje(String profesor_Borrado_con_Exito) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
