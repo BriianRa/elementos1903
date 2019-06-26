@@ -28,6 +28,9 @@ public class ControladorProfesor {
     //METODO PARA GUARDAR 
     @Autowired 
      RepoProfesor repoProfe; //atributo
+    
+    
+    
     @PostMapping("/profesor")
     public Estatus guardar(@RequestBody String json)throws Exception{
         

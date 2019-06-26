@@ -5,6 +5,8 @@
  */
 package org.unitec.elementos1903;
 
+import org.springframework.data.annotation.Id;
+
 /**
  *
  * @author Servicios Especiales
@@ -16,6 +18,7 @@ public class Profesor {
     private String  email;
 
     public Profesor() {
+        
     }
 
     public Profesor(Integer clave, String nombre, String email) {
@@ -23,6 +26,7 @@ public class Profesor {
         this.nombre = nombre;
         this.email = email;
     }
+    @Id
 
     public Integer getClave() {
         return clave;
